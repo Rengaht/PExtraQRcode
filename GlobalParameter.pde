@@ -1,7 +1,7 @@
 class GlobalParameter{
   
 
-  //String OrderFolder;
+  String OrderFolder;
   String OutputFolder;
   String ServerURL;
   int OscPort;
@@ -23,8 +23,8 @@ class GlobalParameter{
     }
     println("__Read Parameters__");
     
-    //OrderFolder=param_xml.getChildren("ORDER_FOLDER")[0].getContent();
-    //println("__OrderFolder= "+OrderFolder);
+    OrderFolder=param_xml.getChildren("ORDER_FOLDER")[0].getContent();
+    println("__OrderFolder= "+OrderFolder);
     
     OutputFolder=param_xml.getChildren("OUTPUT_FOLDER")[0].getContent();
     println("__OutputFolder= "+OutputFolder);
